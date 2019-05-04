@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="15dp"
+        android:id="@+id/textView1"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Door No./ Street No.*"
+        android:id="@+id/tv2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView1"
+        android:textColor="#000"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="2dp"
+        android:id="@+id/editdoor"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LandMark*"
+        android:layout_below="@+id/editdoor"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Landmark*"
+        android:id="@+id/editlandmark"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="2dp"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editlandmark"
+        android:id="@+id/spinner"></Spinner>
+    <EditText
+        android:id="@+id/city"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:focusable="FALSE"
+        android:hint="City*"
+        android:singleLine="true"
+        android:text="Hyderabad"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/city5"
+        android:layout_below="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:focusable="FALSE"
+        android:hint="City*"
+        android:singleLine="true"
+        android:text="Telangana"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/city6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:layout_below="@+id/city5"
+        android:focusable="FALSE"
+        android:hint="City*"
+        android:singleLine="true"
+        android:text="INDIA"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pincode*"
+        android:layout_below="@+id/city6"
+        android:layout_marginTop="2dp"
+        android:id="@+id/editpincode"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Change Address"
+        android:id="@+id/change"
+        android:layout_below="@id/editpincode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bbkg"
+        android:textColor="#fff"/>
+
+
+
+
+</RelativeLayout>

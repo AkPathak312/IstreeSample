@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/sccoterlogo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/scooter"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:id="@+id/textviewww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Minimum order value is Rs. 100.0.
+Make sure your minimum order value is above it."
+        android:layout_below="@id/scooter"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+    />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:background="@drawable/bbkg"
+        android:textColor="#fff"
+        android:layout_below="@+id/scooter"
+        android:layout_toLeftOf="@+id/cancel"
+        android:layout_toStartOf="@+id/cancel"
+        android:layout_marginRight="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="52dp" />
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:background="@drawable/bbkg"
+        android:textColor="#fff"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_alignBaseline="@+id/proceed"
+        android:layout_alignBottom="@+id/proceed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
